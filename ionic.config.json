@@ -1,0 +1,7 @@
+{
+  "name": "ServicesApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
