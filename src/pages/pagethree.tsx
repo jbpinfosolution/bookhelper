@@ -1,33 +1,32 @@
+import React from "react";
 import {
     IonContent,
     IonHeader,
     IonPage,
     IonTitle,
     IonToolbar,
-    IonButtons,
-    IonBackButton
+    IonBackButton,
+   
+    IonButtons
   } from "@ionic/react";
-  import React from "react";
-import Menu from "../components/menu";
+import Worker from "../components/worker"
 
-  
-  
-  const  SecondPage: React.FC = () => {
+const  PageThree: React.FC = () => {
     return (
       <IonPage>
         <IonContent>
         <IonHeader>
           <IonToolbar color="secondary">
-          <IonButtons slot="start">
+            <IonButtons slot="start">
             <IonBackButton defaultHref="/home"/>
             </IonButtons>
-            <IonTitle className="ion-text-center">SERVICES</IonTitle>
+            <IonTitle className="ion-text-center">PLUMBERS</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <Menu />
+        <Worker/>
         </IonContent>
       </IonPage>
     );
   };
   
-  export default SecondPage;
+  export default PageThree;

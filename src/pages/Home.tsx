@@ -18,7 +18,7 @@ const Home: React.FC = () => {
           <IonTitle className="ion-text-center">WELCOME</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <Address />
+      <Address  />
       </IonContent>
     </IonPage>
   );

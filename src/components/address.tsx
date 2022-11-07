@@ -42,7 +42,7 @@ const Address: React.FC<ContainerProps> = () => {
     setAddress({ ...address, [name]: value });
   };
   const onSubmits = (e: any) => {
-    console.log(address);
+    // console.log(address);
     setShowAddress(true);
     if (
       !address.addressLine ||
@@ -57,7 +57,7 @@ const Address: React.FC<ContainerProps> = () => {
     e.preventDefault();
   };
   const deleteAddress = (e: any) => {
-    console.log(address);
+    // console.log(address);
     setShowAddress(false);
     address.addressLine = "";
     address.city = "";
@@ -147,7 +147,7 @@ const Address: React.FC<ContainerProps> = () => {
                 </IonCol>
               </IonRow>
             </IonGrid>
-            <IonButton type="submit" shape="round" color="success">
+            <IonButton  type="submit" shape="round" color="success">
               Submit
             </IonButton>
           </IonList>

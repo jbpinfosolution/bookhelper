@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Ajay Sharma",
+    "address": {
+      "addressline": "Anand nagar,adhartal",
+      "city": "Jabalpur",
+      "state": "Madhya Pradesh",
+      "zipcode": "4802002",
+      "geo": {
+        "lat": "23.195824",
+        "lng": "79.945219"
+      }
+    },
+    "phone": "+91 94556 45566"
+  },
+  {
+    "id": 2,
+    "name": "Sunil Patel",
+    "address": {
+      "addressline": "Suhagi",
+      "city ": "Jabalpur ",
+      "state": "Madhya Pradesh",
+      "zipcode": "482004",
+      "geo": {
+        "lat": "23.219304",
+        "lng": "79.957532"
+      }
+    },
+    "phone": "+91 89566 55622"
+  },
+  {
+    "id": 3,
+    "name": "Vijay Sharma",
+    "address": {
+      "addressline": "Damohnaka",
+      "city ": "Jabalpur",
+      "state": "Madhya Pradesh",
+      "zipcode": "482002",
+      "geo": {
+        "lat": "23.185499",
+        "lng": "79.926201"
+      }
+    },
+    "phone": "+91 88556 56454"
+  }
+]
