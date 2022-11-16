@@ -14,7 +14,7 @@ import {
   IonNavLink,
 } from "@ionic/react";
 import { locationOutline, search } from "ionicons/icons";
-import PageThree from "../pages/pagethree";
+// import PageThree from "../pages/pagethree";
 
 
 
@@ -86,11 +86,12 @@ const Menu: React.FC = () => {
           ))}
         </IonList>}
         <IonList>
-          <IonNavLink
+          {/* <IonNavLink
            routerDirection="forward"
            component={() => <PageThree/>}
-          >
+          > */}
           <IonButton
+          routerLink="/home/menu/worker"
             // onClick={showWorkers}
             size="large"
             fill="outline"
@@ -98,7 +99,7 @@ const Menu: React.FC = () => {
           >
             Plumber
           </IonButton>
-          </IonNavLink>
+          {/* </IonNavLink> */}
         </IonList>
       </div>
     </>

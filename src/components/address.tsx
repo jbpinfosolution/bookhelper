@@ -16,7 +16,7 @@ import {
   IonNavLink,
 } from "@ionic/react";
 import React, { useState } from "react";
-import SecondPage from "../pages/secondpage";
+// import SecondPage from "../pages/secondpage";
 import "./ExploreContainer.css";
 import { useDispatch } from "react-redux";
 
@@ -35,8 +35,8 @@ const Address: React.FC<ContainerProps> = () => {
   });
 
   const inputEvent = (e: any) => {
-    console.log(e.target.value);
-    console.log(e.target.name);
+    // console.log(e.target.value);
+    // console.log(e.target.name);
 
     const { value, name } = e.target;
     setAddress({ ...address, [name]: value });
@@ -169,11 +169,12 @@ const Address: React.FC<ContainerProps> = () => {
               <IonGrid>
                 <IonRow>
                   <IonCol>
-                    <IonNavLink
+                    {/* <IonNavLink
                       routerDirection="forward"
                       component={() => <SecondPage />}
-                    >
+                    > */}
                       <IonButton
+                      routerLink="/home/menu"
                         shape="round"
                         color="success"
                         onClick={() =>
@@ -189,7 +190,7 @@ const Address: React.FC<ContainerProps> = () => {
                       >
                         Confirm
                       </IonButton>
-                    </IonNavLink>
+                    {/* </IonNavLink> */}
                   </IonCol>
                   <IonCol>
                     <IonButton
