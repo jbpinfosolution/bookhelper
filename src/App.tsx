@@ -1,5 +1,7 @@
 // import { Redirect, Route } from 'react-router-dom';
-import { IonApp, setupIonicReact,IonNav } from '@ionic/react';
+import { IonApp, setupIonicReact,IonNav, IonRouterOutlet } from '@ionic/react';
+import { Redirect, Route } from 'react-router-dom';
+import { IonReactRouter } from '@ionic/react-router'
 import React from 'react'
 // import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
@@ -24,21 +26,34 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
+import SecondPage from './pages/secondpage';
+import PageThree from "./pages/pagethree"
+import DetailsPage from './pages/detailspage';
+
 setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
-    <IonNav root={() => <Home />}></IonNav>;
-    {/* <IonReactRouter>
+    {/* <IonNav root={() => <Home />}> */}
+      
+    <IonReactRouter>
       <IonRouterOutlet>
         <Route exact path="/home">
           <Home />
+        </Route>
+        <Route  exact path="/home/menu" component={SecondPage}>
+
+        </Route>
+        <Route exact path="/home/menu/worker" component={PageThree}/>
+        
+        <Route exact path="/home/menu/worker/details/:id" component={DetailsPage}>
         </Route>
         <Route exact path="/">
           <Redirect to="/home" />
         </Route>
       </IonRouterOutlet>
-    </IonReactRouter> */}
+    </IonReactRouter>
+    {/* </IonNav>; */}
   </IonApp>
 );
 
